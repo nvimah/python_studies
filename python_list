@@ -1,0 +1,30 @@
+courses = ['math', 'English', 'Compsci', 'kiswahili', 'CRE']
+courses_2 = ['Bcom', 'Physics', 'Geography']
+courses.append('Art') # At the end of the list
+print(courses)
+courses.insert(0, 'Homescience') # insert at any position on the list
+print(courses)
+courses.extend(courses_2) # added items of another list to another list
+print(courses)
+courses.remove('math') #removes
+courses.pop() #removes the last items and returns the removed value
+courses.reverse() #reverses the list
+courses.sort() # sorts the list in alphabetical or ascending order
+courses.sort(reverse=True) # sorts in descending order
+sorted()#return a sorted version of the list and doesn't tamper with the original list
+        #newlist = sorted(courses)
+print(sum()) #returns the sum
+print(courses.index('math'))#returns the index of a value
+print('Art' in courses) #returns whether a value is in a list
+for item in courses:
+    print(item) #loops through a list
+
+for index, course in enumerate (courses, start=0):#starts at the first item
+    print(index, course) #prints every course and it's index
+ 
+courses_str = ', '.join(courses) #prints a string version of the list
+print(courses_str)
+
+new_list = courses_str.split(' - ') #converts a string to a list
+print(new_list)
+
